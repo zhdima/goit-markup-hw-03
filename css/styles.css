@@ -1,0 +1,239 @@
+:root {
+  /* Colors */
+  --main-text-color: #757575;
+  --inverse-text-color: #FFFFFF;
+  --title-text-color: #212121;
+  --logo-color: #000000;
+  --header-line-color: #ECECEC;
+  --footer-mail-tel-color: rgba(255,255,255,0.6);
+  --main-bg-color: #FFFFFF;
+  --inverse-bg-color: #2F303A;
+  --grey-bg-color: #F5F4FA;
+  --accent-color: #2196F3;
+  /* Fonts */
+  --main-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
+}
+
+body {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+
+  font-family: var(--main-font);
+  letter-spacing: 0.03em;
+}
+
+/* Hidden elements */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Plain link */
+
+.plink {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* Plain list */
+
+.plist {
+  list-style: none;
+}
+
+/* Logo */
+
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
+
+.nav-logo {
+  color: var(--logo-color);
+}
+
+.footer-logo {
+  color: var(--inverse-text-color);
+}
+
+.accentlogo {
+  color: var(--accent-color);
+}
+
+/* Navigation */
+
+.nav-link, 
+.header-contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--title-text-color);
+}
+
+/* Accent color for links */
+
+.nav-link.current,
+.nav-link:hover,
+.nav-link:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus, 
+.footer-contacts-link:hover,
+.footer-contacts-link:focus
+{
+  color: var(--accent-color);
+}
+
+/* -------------------- */
+/* Стили для index.html */
+/* -------------------- */
+
+/* Section Hero */
+
+.hero {
+  color: var(--inverse-text-color);
+  background-color: var(--inverse-bg-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--inverse-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border: 0;
+}
+
+/* Section Advs */
+
+.advs-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.advs-item-text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}
+
+/* Section WhatDo */
+
+.whatdo-title,
+.ourteam-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+/* Section OurTeam */
+
+.ourteam {
+  background-color: var(--grey-bg-color);
+}
+
+.ourteam-item {
+  background-color: var(--main-bg-color);
+  text-align: center;
+}
+
+.ourteam-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: var(--title-text-color);
+}
+
+.ourteam-job {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--inverse-bg-color);
+}
+
+.address {
+  font-style: inherit;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--footer-mail-tel-color);
+}
+
+.geoaddr {
+  color: var(--inverse-text-color);
+}
+
+/* ------------------------ */
+/* Стили для portfolio.html */
+/* ------------------------ */
+
+/* Filter buttons */
+
+.portfolio-filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  color: var(--title-text-color);
+  background-color: var(--grey-bg-color);
+  cursor: pointer;
+  border: 0;
+}
+
+.portfolio-filter-btn.current,
+.portfolio-filter-btn:hover,
+.portfolio-filter-btn:focus {
+  color: var(--inverse-text-color);
+  background-color: var(--accent-color);
+}
+
+/* Portfolio list */
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.portfolio-type {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
