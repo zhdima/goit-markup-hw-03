@@ -330,7 +330,15 @@ img {
 
 /* Filter buttons */
 
+.portfolio-filter-list {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
 .portfolio-filter-btn {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -340,6 +348,7 @@ img {
   background-color: var(--grey-bg-color);
   cursor: pointer;
   border: 0;
+  border-radius: 4px;
 }
 
 .portfolio-filter-btn.current,
@@ -365,7 +374,14 @@ img {
   flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items));
 }
 
+.portfolio-item-container {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+
 .portfolio-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
