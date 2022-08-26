@@ -13,37 +13,50 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav>
-        <a class="plink logo nav-logo" href="./index.html" lang="en">
-          <span class="accentlogo">Web</span>Studio</a
-        >
-        <ul class="plist nav-list">
-          <li><a class="plink nav-link" href="./index.html">Студія</a></li>
-          <li><a class="plink nav-link current" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="plink nav-link" href="">Контакти</a></li>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
+          <a class="plink logo nav-logo" href="./index.html" lang="en">
+            <span class="accentlogo">Web</span>Studio</a
+          >
+          <ul class="plist nav-list">
+            <li><a class="plink nav-link current" href="./index.html">Студія</a></li>
+            <li><a class="plink nav-link" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="plink nav-link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="plist header-contacts-list">
+          <li lang="en"
+            ><a class="plink header-contacts-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            ></li
+          >
+          <li
+            ><a class="plink header-contacts-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            ></li
+          >
         </ul>
-      </nav>
-      <ul class="plist header-contacts-list">
-        <li lang="en"
-          ><a class="plink header-contacts-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          ></li
-        >
-        <li
-          ><a class="plink header-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li
-        >
-      </ul>
+      </div>
     </header>
 
     <!-- Main content -->
     <main>
-      <section class="portfolio">
+      <section class="section portfolio">
+      <div class="container">
         <h1 class="portfolio-title visually-hidden">Наше портфоліо</h1>
 
         <ul class="plist portfolio-filter-list">
